@@ -24,3 +24,38 @@ img {
   -o-object-fit: contain;
   object-fit: contain;
 }
+
+.container {
+  height: 100vh;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  align-content: space-around;
+}
+
+.box {
+  width: 12rem;
+  height: 12rem;
+  background-color: skyblue;
+  border: 2px solid black;
+  font-size: 5rem;
+  font: weight 900px;
+}
+
+.box-1 {
+  align-self: flex-start;
+  order: -1;
+}
+.box-2 {
+  align-self: flex-end;
+  order: o;
+}
+.box-3 {
+  align-self: center;
+  order: 1;
+}
